@@ -58,6 +58,11 @@ body{
   filter: drop-shadow(0 6px 18px rgba(0,0,0,.12));
 }
 
+.logo-header {
+  height: 64px;        /* use 96px or 128px versions for crisp @2x/@3x */
+  width: auto;
+}
+
 /* Nav */
 .nav{display:flex; align-items:center; gap:.5rem; flex-wrap:wrap;}
 .nav-link,.nav-cta{
