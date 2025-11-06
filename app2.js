@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         for(const k in payload) fd.append(k, payload[k]);
 
         try{
-          const res = await fetch('https://script.google.com/macros/s/AKfycbxA2uBtigzEzN3CxWtyT43EYYdWAG6hmE_CZucbtYHDHDdBlmikWxIq_wsh5fPdtd2GOw/exec', { method:'POST', body: fd });
+          const res = await fetch('https://script.google.com/macros/s/AKfycbw-4e1m9DqaHtJe-3IHkRx315obgqwjm7_AXMre_M0Kn-efa6eMa-BJrkzsM00Zw_wDUw/exec', { method:'POST', body: fd });
           let ok=false;
           try{ const data=await res.json(); ok=!!data.ok; } catch { ok=res.ok; }
           if(ok){ status.textContent='Thank you. Your message has been sent and we will get to it as soon as possible.'; form.reset(); if(startedEl) startedEl.value=String(Date.now()); }
