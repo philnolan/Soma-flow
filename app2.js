@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded',()=>{
         for(const k in payload) fd.append(k, payload[k]);
 
         try{
-          const res = await fetch('https://script.google.com/macros/s/AKfycbxdOvy-1iy8BcUxQMChvsW3y1_2D8skrTptOhb9urqxD6KGsdQdKQkLu7ysdwV9Wxe1wg/exec', { method:'POST', body: fd });
+          const res = await fetch('https://script.google.com/macros/s/AKfycbxA2uBtigzEzN3CxWtyT43EYYdWAG6hmE_CZucbtYHDHDdBlmikWxIq_wsh5fPdtd2GOw/exec', { method:'POST', body: fd });
           let ok=false;
           try{ const data=await res.json(); ok=!!data.ok; } catch { ok=res.ok; }
-          if(ok){ status.textContent='Thanks — your message has been sent.'; form.reset(); if(startedEl) startedEl.value=String(Date.now()); }
+          if(ok){ status.textContent='Thank you. Your message has been sent and we will get to it as soon as possible.'; form.reset(); if(startedEl) startedEl.value=String(Date.now()); }
           else { status.textContent='Sorry, something went wrong.'; btn.disabled=false; }
         }catch(err){
           status.textContent='Network error — please try again.';
