@@ -46,7 +46,7 @@ body{
   display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:12px 20px;
 }
 .brand{display:flex; align-items:center; gap:14px;}
-.logo{width:300px; height:112px; object-fit:contain;}
+.logo{width:56px; height:56px; object-fit:contain;}
 .brand-name{font-family:var(--font-heading); margin:0; line-height:1; font-weight:600; letter-spacing:.3px;}
 .tagline{margin:.15rem 0 0; color:var(--brand-ink-soft); font-size:.95rem;}
 
