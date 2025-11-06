@@ -50,6 +50,14 @@ body{
 .brand-name{font-family:var(--font-heading); margin:0; line-height:1; font-weight:600; letter-spacing:.3px;}
 .tagline{margin:.15rem 0 0; color:var(--brand-ink-soft); font-size:.95rem;}
 
+.logo-hero {
+  display: block;
+  max-width: 600px;    /* feel free to bump to 720–840px for extra prominence */
+  width: 90vw;         /* scales nicely on mobile */
+  margin: 2rem auto;   /* centers with breathing room */
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,.12));
+}
+
 /* Nav */
 .nav{display:flex; align-items:center; gap:.5rem; flex-wrap:wrap;}
 .nav-link,.nav-cta{
